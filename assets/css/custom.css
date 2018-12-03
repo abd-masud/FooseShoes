@@ -115,3 +115,59 @@ header .banner{
 .banner .link a:hover{
 	color: #62c8a6;
 }
+
+
+.item{
+	background-color: #2e2e2e;
+	height: 90px;
+}
+.item nav{
+	top: 13px;
+}
+.item .item-tag{
+	padding: 15px 0;
+}
+.item-focus{
+	height: 10px;
+	background-color: black;
+	padding-top: 7px;
+	margin-top: 7px;
+}
+.item-focus .item-bar{
+	height: 6px;
+	background-color: #57c5a0;
+	margin: -5px 7px;
+	opacity: 0;
+	transition: .2s;
+}
+.item h5{
+	color: #acacac;
+	font-size: 18px;
+	text-align: center;
+	transition: .2s;
+}
+.item p{
+	color: #6e6e6e;
+	text-align: center;
+	font-size: 12px;
+	transition: .2s;
+}
+.item li{
+	width: 219px;
+	border: none;
+	border-right: solid 4px #2e2e2e;
+	cursor: pointer;
+}
+.item li:hover h5, .item .active-tag h5{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+.item li:hover p, .item .active-tag p{
+	color: #adadad;
+	text-align: center;
+	font-size: 12px;
+}
+.item li:hover .item-bar, .item .active-bar{
+	opacity: 1;
+}
