@@ -1,40 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Allerta|Raleway');
-*{
+
+* {
 	padding: 0;
 	margin: 0;
 	outline: 0;
 }
-body{
+
+body {
 	font-family: 'Raleway', sans-serif;
 	font-family: 'Allerta', sans-serif;
 }
-a,a:hover{
+
+a,
+a:hover {
 	text-decoration: none;
 }
-img{
+
+img {
 	vertical-align: center;
 }
-ul,ol{
+
+ul,
+ol {
 	list-style: none;
 }
-h1,h2,h3,h4,h5,h5,p,a,img,ul,ol,li,i,nav{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+a,
+img,
+ul,
+ol,
+li,
+i,
+nav {
 	padding: 0;
 	margin: 0;
 }
-.top-head{
+
+.top-head {
 	background-color: #242424;
 	height: 45px;
 }
-.title h3{
+
+.title h3 {
 	color: #57c5a0;
 	font-size: 26px;
 	line-height: 45px;
 }
-.lor i{
+
+.lor i {
 	padding-right: 15px;
 	color: #7e7e7e;
 }
-.lor .log{
+
+.lor .log {
 	color: #7e7e7e;
 	font-size: 11px;
 	line-height: 45px;
@@ -44,40 +69,48 @@ h1,h2,h3,h4,h5,h5,p,a,img,ul,ol,li,i,nav{
 	padding-left: 25px;
 	padding-right: 25px;
 }
-nav{
+
+nav {
 	height: 60px;
 }
-nav ul li{
+
+nav ul li {
 	border: solid 1px #eeeeee;
 	border-bottom: none;
 	border-top: none;
 }
-nav ul li .nav-link{
+
+nav ul li .nav-link {
 	line-height: 40px;
 	font-size: 16px;
 	display: inline-block;
 	margin-left: 20px;
 	margin-right: 20px;
 }
-.nav-right a{
+
+.nav-right a {
 	color: #adadad;
 }
-.nav-right .badge{
+
+.nav-right .badge {
 	background-color: #adadad;
 	color: white;
 	margin-left: 5px;
 	font-size: 12px;
 	transition: .2s;
 }
-.nav-right a:hover .badge{
+
+.nav-right a:hover .badge {
 	background-color: #57c5a0;
 }
-header .banner{
+
+header .banner {
 	background-image: url(../image/banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.banner .price{
+
+.banner .price {
 	height: 68px;
 	width: 68px;
 	background-color: #57c5a0;
@@ -89,17 +122,21 @@ header .banner{
 	justify-content: center;
 	align-items: center;
 }
-.banner h1{
+
+.banner h1 {
 	font-size: 40px;
 	margin-bottom: 10px;
 }
-.banner .para{
+
+.banner .para {
 	font-size: 20px;
 }
-.banner .link{
+
+.banner .link {
 	display: flex;
 }
-.banner .link a{
+
+.banner .link a {
 	height: 40px;
 	width: 40px;
 	background-color: #fafaf9;
@@ -112,62 +149,111 @@ header .banner{
 	margin-bottom: 95px;
 	transition: .2s
 }
-.banner .link a:hover{
+
+.banner .link a:hover {
 	color: #62c8a6;
 }
 
 
-.item{
+.item {
 	background-color: #2e2e2e;
 	height: 90px;
 }
-.item nav{
+
+.item nav {
 	top: 13px;
 }
-.item .item-tag{
+
+.item .item-tag {
 	padding: 15px 0;
 }
-.item-focus{
+
+.item-focus {
 	height: 10px;
 	background-color: black;
 	padding-top: 7px;
 	margin-top: 7px;
 }
-.item-focus .item-bar{
+
+.item-focus .item-bar {
 	height: 6px;
 	background-color: #57c5a0;
 	margin: -5px 7px;
 	opacity: 0;
 	transition: .2s;
 }
-.item h5{
+
+.item h5 {
 	color: #acacac;
 	font-size: 18px;
 	text-align: center;
 	transition: .2s;
 }
-.item p{
+
+.item p {
 	color: #6e6e6e;
 	text-align: center;
 	font-size: 12px;
 	transition: .2s;
 }
-.item li{
+
+.item li {
 	width: 219px;
 	border: none;
 	border-right: solid 4px #2e2e2e;
 	cursor: pointer;
 }
-.item li:hover h5, .item .active-tag h5{
+
+.item li:hover h5,
+.item .active-tag h5 {
 	color: white;
 	font-size: 18px;
 	text-align: center;
 }
-.item li:hover p, .item .active-tag p{
+
+.item li:hover p,
+.item .active-tag p {
 	color: #adadad;
 	text-align: center;
 	font-size: 12px;
 }
-.item li:hover .item-bar, .item .active-bar{
+
+.item li:hover .item-bar,
+.item .active-bar {
 	opacity: 1;
+}
+
+
+.specials {
+	background-color: #242424;
+}
+
+.specials .special-item {
+	position: relative;
+	padding: 25px 0;
+}
+
+.specials .special-level {
+	height: 60px;
+	background-color: rgba(57, 57, 57, .9);
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%);
+	width: 180px;
+}
+
+.specials .special-level.level1 {
+	width: 180px;
+}
+
+.specials .special-level.level2 {
+	width: 230px;
+}
+
+.specials .special-level p {
+	color: white;
+	font-size: 25px;
+	line-height: 60px;
+	text-align: center;
 }
